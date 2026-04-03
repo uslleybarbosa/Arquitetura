@@ -1,21 +1,28 @@
-Arquitetura e Organização de Computadores 
-– Unidade 01: Sistemas Numéricos  
+# Arquitetura e Organização de Computadores  
+## Unidade 01: Sistemas Numéricos  
 
-Nesta unidade estudamos os sistemas de numeração e suas
-conversões: binário, decimal, octal e hexadecimal.
+Nesta unidade, estudamos os sistemas de numeração e suas conversões: **binário, decimal, octal e hexadecimal**.
 
-Os computadores utilizam a base binária porque seus 
-circuitos trabalham com dois estados:0 (desligado, 
-ausência de corrente) e 1 (ligado, presença de corrente). 
+---
 
-Se fosse usada a base decimal, seria necessário 
-distinguir 10 estados diferentes, o que 
-tornaria o hardware muito maiscomplexo.
+## Por que os computadores usam a base binária?
 
-As conversões numéricas são muito usadas em programação
-de baixo nível, como no desenvolvimento de drivers 
-e sistemas que se comunicam diretamente 
-com o hardware.
+Os computadores utilizam a **base binária** porque seus circuitos trabalham com dois estados:
+
+- **0** → desligado (ausência de corrente)  
+- **1** → ligado (presença de corrente)  
+
+Se fosse utilizada a base decimal, seria necessário distinguir **10 estados diferentes**, o que tornaria o hardware muito mais complexo.
+
+---
+
+## Aplicações das conversões numéricas
+
+As conversões numéricas são muito utilizadas em:
+
+- Programação de baixo nível  
+- Desenvolvimento de drivers  
+- Sistemas que se comunicam diretamente com o hardware  
 
 Exemplo: para converter o número decimal 17 
 em binário, fazemos divisões 
