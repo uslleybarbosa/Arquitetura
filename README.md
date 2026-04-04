@@ -1,26 +1,12 @@
+ Repositório de Arquitetura de computadores 
 
-# Arquitetura e Organização de Computadores  
-## Unidade 01 – Sistemas Numéricos
+Este repositório é dedicado ao compartilhamento de conhecimento voltado para Arquitetura de computadores
+Aqui, reviso conteúdos, organizo materiais e disponibilizo recursos que podem ajudar estudantes e entusiastas da área.
 
-### Conceito
+O objetivo é:
 
-- Computadores usam **base binária (0 e 1)** porque seus circuitos só distinguem dois estados: ligado/desligado.
-- Conversões numéricas são essenciais em programação de baixo nível e comunicação com hardware.
+    📖 Revisar e consolidar conceitos fundamentais.
+    🛠️ Compartilhar práticas e exemplos aplicados.
+    🤝 Contribuir com quem está trilhando o caminho dos estudos em Computação.
 
-### Principais sistemas
-
-- **Decimal (base 10)**
-- **Binário (base 2)**
-- **Octal (base 8)**
-- **Hexadecimal (base 16)**
-
-### Métodos de conversão
-
-- **Decimal → Binário**: divisões sucessivas por 2.  
-- **Binário → Decimal**: soma das potências de 2.  
-- **Decimal → Octal**: divisões sucessivas por 8.  
-- **Octal → Decimal**: soma das potências de 8.  
-- **Decimal → Hexadecimal**: divisões sucessivas por 16 (restos 10–15 viram A–F).  
-- **Hexadecimal → Decimal**: soma das potências de 16.  
-- **Hexadecimal ↔ Binário**: usar decimal como intermediário.  
-- **Octal ↔ Binário/Hexadecimal**: também via decimal como intermediário.
+Seja bem-vindo(a) e aproveite os materiais disponíveis!
