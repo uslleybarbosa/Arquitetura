@@ -1,4 +1,4 @@
-📌 Registradores e início ao Assembly
+# 📌 Registradores e início ao Assembly
 
 Ao estudar arquitetura de computadores, é essencial compreender os registradores. Eles são pequenas áreas de memória dentro do processador, extremamente rápidas, usadas para armazenar dados temporários durante a execução de instruções.
 
@@ -9,8 +9,10 @@ Em um processador de 32 bits, cada registrador possui 32 bits de largura. Isso p
   . AH → 8 bits mais altos dentro de AX.
 
   . AL → 8 bits mais baixos dentro de AX.
+
+  ---
   
-🔹 Tipos de registradores
+## 🔹 Tipos de registradores
 
 Propósito geral (movimentação de dados):
 
@@ -35,8 +37,10 @@ Ponteiros (controle de fluxo e pilha):
     ESI → origem.
 
     EDI → destino.
+
+    ---
     
-🔹 Flags (registradores de controle)
+## 🔹 Flags (registradores de controle)
 
 As flags indicam o resultado de operações aritméticas e lógicas:
 
@@ -49,8 +53,10 @@ As flags indicam o resultado de operações aritméticas e lógicas:
     Auxiliary Flag (AF) → usada em operações de ajuste entre nibbles (4 bits).
 
     Parity Flag (PF) → ativa se o número de bits 1 no resultado for par. 
+
+    ---
     
-🔹 Instruções básicas em Assembly
+## 🔹 Instruções básicas em Assembly
 
     Movimentação
 
@@ -59,8 +65,10 @@ As flags indicam o resultado de operações aritméticas e lógicas:
         PUSH EAX → coloca o valor de EAX na pilha.
 
         POP EBX → retira o valor do topo da pilha e coloca em EBX.
+
+        ---
         
-Aritmética
+## Aritmética
 
     ADD EAX, 5 → soma 5 a EAX.
 
@@ -69,8 +77,10 @@ Aritmética
     IMUL EAX, EDX → multiplica EAX por EDX.
 
     IDIV EAX, EDX → divide EAX por EDX.
+
+    ---
     
-Controle de fluxo
+## Controle de fluxo
 
     JMP endereço → salto incondicional.
 
@@ -79,5 +89,7 @@ Controle de fluxo
     JNE endereço → salto se resultado for diferente.
 
     CMP EAX, EBX → compara EAX com EBX.
+
+    ---
     
 Dominar os registradores, as flags e as instruções básicas é o primeiro passo para compreender a lógica do assembly. Esse conhecimento é fundamental para manipular dados diretamente no processador e entender como programas funcionam em baixo nível.
