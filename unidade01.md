@@ -164,11 +164,11 @@ Exemplo: 1E
 	
 Passo 2 – Decimal para binário
 	
-  30÷2=15resto 0
-  15÷2=7resto 1
-  7÷2=3resto 1
-  3÷2=1resto 1
-  1÷2=0resto 1
+  30÷2=15 resto 0
+  15÷2=7 resto 1
+  7÷2=3 resto 1
+  3÷2=1 resto 1
+  1÷2=0 resto 1
 	
 Lendo os restos de baixo para cima: 11110. 
  Portanto, 1E = 11110 
