@@ -1,26 +1,24 @@
-# 📌 Registradores e início ao Assembly
+## 📌 Registradores e início ao Assembly
 
 Ao estudar arquitetura de computadores, é essencial compreender os registradores. Eles são pequenas áreas de memória dentro do processador, extremamente rápidas, usadas para armazenar dados temporários durante a execução de instruções.
 
 Em um processador de 32 bits, cada registrador possui 32 bits de largura. Isso permite acessar partes específicas:
 
-``` 
+```asm
 
-  . AX → 16 bits menos significativos de EAX.
+  AX → 16 bits menos significativos de EAX.
 
-  . AH → 8 bits mais altos dentro de AX.
+  AH → 8 bits mais altos dentro de AX.
 
-  . AL → 8 bits mais baixos dentro de AX.
+  AL → 8 bits mais baixos dentro de AX.
 
 ```
-
---- 
   
-## 🔹 Tipos de registradores
+### 🔹 Tipos de registradores
 
 Propósito geral (movimentação de dados):
 
-```  
+```asm
 
     EAX → operações aritméticas.
 
@@ -32,9 +30,9 @@ Propósito geral (movimentação de dados):
 
 ```  
     
-Ponteiros (controle de fluxo e pilha):
+### 🔹Ponteiros (controle de fluxo e pilha):
 
-```  
+```asm 
 
     EIP → aponta para a próxima instrução.
 
@@ -44,43 +42,38 @@ Ponteiros (controle de fluxo e pilha):
 
 ```  
     
-Índice (operações com arrays e strings):
+### 🔹Índice (operações com arrays e strings):
 
-```  
+```asm
 
     ESI → origem.
 
     EDI → destino.
 
 ``` 
-
-  ---
     
-## 🔹 Flags (registradores de controle)
+### 🔹 Flags (registradores de controle)
 
 As flags indicam o resultado de operações aritméticas e lógicas:
 
-``` 
 
-    Overflow Flag (OF) → indica quando o resultado excede o limite de representação.
+ * Overflow Flag (OF) → indica quando o resultado excede o limite de representação.
 
-    Sign Flag (SF) → mostra se o resultado é negativo (bit mais significativo = 1).
+ * Sign Flag (SF) → mostra se o resultado é negativo (bit mais significativo = 1).
 
-    Zero Flag (ZF) → ativa quando o resultado é zero.
+ * Zero Flag (ZF) → ativa quando o resultado é zero.
 
-    Auxiliary Flag (AF) → usada em operações de ajuste entre nibbles (4 bits).
+ * Auxiliary Flag (AF) → usada em operações de ajuste entre nibbles (4 bits).
 
-    Parity Flag (PF) → ativa se o número de bits 1 no resultado for par.
+ *  Parity Flag (PF) → ativa se o número de bits 1 no resultado for par.
 
-``` 
-
- ---
     
-## 🔹 Instruções básicas em Assembly
+### 🔹 Instruções básicas em Assembly
 
-``` 
 
-    Movimentação
+  #### Movimentação:
+
+  ```asm
 
         MOV EAX, EBX → copia o valor de EBX para EAX.
 
@@ -89,12 +82,10 @@ As flags indicam o resultado de operações aritméticas e lógicas:
         POP EBX → retira o valor do topo da pilha e coloca em EBX.
 
 ``` 
-
-  ---
         
-## Aritmética
+### 🔹Aritmética
 
-``` 
+```asm
 
     ADD EAX, 5 → soma 5 a EAX.
 
@@ -105,12 +96,10 @@ As flags indicam o resultado de operações aritméticas e lógicas:
     IDIV EAX, EDX → divide EAX por EDX.
 
 ``` 
-
-   ---
     
-## Controle de fluxo
+### 🔹Controle de fluxo
 
-```  
+```asm
 
     JMP endereço → salto incondicional.
 
@@ -121,7 +110,4 @@ As flags indicam o resultado de operações aritméticas e lógicas:
     CMP EAX, EBX → compara EAX com EBX.
 
 ```  
-
-   ---
-    
 Dominar os registradores, as flags e as instruções básicas é o primeiro passo para compreender a lógica do assembly. Esse conhecimento é fundamental para manipular dados diretamente no processador e entender como programas funcionam em baixo nível.
